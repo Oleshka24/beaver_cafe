@@ -20,15 +20,11 @@ function css_style(done) {
 	 	browsers: ['last 2 versions'],
 	 	cascade: false
 	 }))
-	 .pipe(sourcemaps.write())
+	 .pipe(sourcemaps.write('./'))
 	 .pipe(gulp.dest('./www/becafe/css/'))
 	 .pipe(browserSync.stream());
 
 	done();
-}
-
-function watchSass() {
-	gulp.watch('www/becafe/scss/*', css_style)
 }
 
 function watchFiles() {
@@ -40,7 +36,7 @@ function watchFiles() {
 function sync(done) {
 	browserSync.init({
 		server: {
-			baseDir: './'
+			baseDir: 'www/becafe/'
 		},
 		port: 3000,
 	});
@@ -54,4 +50,3 @@ function browserReload(done) {
 }
 
 gulp.task('default', gulp.parallel(watchFiles, sync));
-gulp.task(sync)
