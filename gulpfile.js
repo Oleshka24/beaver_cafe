@@ -28,7 +28,7 @@ function css_style(done) {
 }
 
 function watchFiles() {
-	gulp.watch('www/becafe/scss/*', css_style);
+	gulp.watch('www/becafe/scss/main.scss', css_style);
 	gulp.watch('www/becafe/index.html', browserReload);
 	gulp.watch('www/becafe/js/main.js', browserReload);
 }

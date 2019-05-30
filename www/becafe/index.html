@@ -5,10 +5,72 @@
 	<title>Beaver Cafe</title>
 	<link rel="stylesheet" href="lib/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
+	<script defer type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+	<script defer type="text/javascript" src="lib/vue.js"></script>
+	<script defer type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-	<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="lib/vue.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<header class="header">
+		<div class="container">
+			<div class="header__cont">
+				<a href="#banner" class="header__logo">
+					<img src="img/logo_icon.svg" alt="Beaver Cafe">
+					<span>Oleshka Be<span class="header__logo--active">Cafe</span></span>
+				</a>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a class="header__nav-link header__nav-link--active" href="#">Home</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="#">About me</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="#">Skills</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="#">Projects</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="banner" id="banner">
+			<h1 class="main__heading">Junior Front-End Developer</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="banner__content">
+							<h2 class="banner__heading">Web <span class="active">Developer</span></h2>
+							<h3 class="banner__subheading">level - <span class="active">junior</span></h3>
+							<div class="banner__paragraph-cont">
+								<p class="banner__paragraph">I'm glad to see you on this site.</p>
+								<p class="banner__paragraph">Let me tell you a few words about me...</p>
+							</div>
+							<a href="#about_me" class="banner__btn">Familiarize</a>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="banner__photo-cont">
+							<div class="banner__photo">
+								<img src="img/photos/banner_photo.jpg" alt="Oleh Pipko">
+							</div>
+							<ul class="banner__decor-circle-list">
+								<li class="banner__decor-circle"></li>
+								<li class="banner__decor-circle"></li>
+								<li class="banner__decor-circle"></li>
+								<li class="banner__decor-circle"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
 </html>
