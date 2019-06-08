@@ -1,8 +1,8 @@
 {
-  "name": "becafe",
+  "name": "beaver_cafe",
   "version": "4.0.0",
-  "description": "Четвертая версия сайта Beaver Cafe",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,14 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/Oleshka24/beaver_cafe.git"
   },
-  "author": "Oleshka24",
+  "author": "@Oleshka_24",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Oleshka24/beaver_cafe/issues"
   },
   "homepage": "https://github.com/Oleshka24/beaver_cafe#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-rename": "^1.4.0",
