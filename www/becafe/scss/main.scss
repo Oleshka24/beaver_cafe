@@ -16,7 +16,7 @@ body {
 
 section {
 	min-height: calc(100vh - 5rem);
-	padding: 40px 0;
+	padding: 4rem 0;
 	position: relative;
 	z-index: 0;
 	display: flex;
@@ -172,6 +172,10 @@ a {
 				}
 			}
 		}
+
+		&-btn {
+			display: none;
+		}
 	}
 }
 
@@ -183,7 +187,7 @@ a {
 		max-width: min-content;
 		margin: 0;
 		font-family: PaytoneOne;
-		font-size: 100px;
+		font-size: 10rem;
 		position: absolute;
 		left: -3vw;
 		top: -8vh;
@@ -209,8 +213,8 @@ a {
 		&::after {
 			content: "";
 			position: absolute;
-			left: 10px;	
-			top: 10px;	
+			left: 1rem;	
+			top: 1rem;	
 			min-width: 100%;
 			min-height: 100%;
 			z-index: -1;
@@ -409,7 +413,7 @@ a {
 		background-color: $black;
 		position: relative;
 		z-index: 2;
-		box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.3);
+		box-shadow: 1.5rem 1rem .5rem rgba(0, 0, 0, 0.3);
 
 		&-cont {
 			display: flex;
@@ -428,7 +432,7 @@ a {
 			display: inline-block;
 			border-radius: 100%;
 			background-color: $black;
-			box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.3);
+			box-shadow: 15rem 1rem .5rem rgba(0, 0, 0, 0.3);
 
 			&:nth-child(1) {
 				width: 9.7rem;
@@ -487,10 +491,14 @@ a {
 
 	&__content {
 		padding-bottom: 3rem;
+
+		&--less {
+			display: none;
+		}
 	}
 
 	&__photo {
-		max-width: calc(100% - 60px);
+		max-width: calc(100% - 6rem);
 		position: absolute;
 	}
 
@@ -561,7 +569,7 @@ a {
 			&-btn {
 				padding: 0;
 				border-width: 0;
-				font-size: 1px;
+				font-size: .1rem;
 				background-color: transparent;
 				cursor: pointer;
 
@@ -584,19 +592,19 @@ a {
 						display: inline-block;
 						position: relative;
 						background-color: $mainYellow;
-						border-radius: 5px;
+						border-radius: .5rem;
 						transform: rotateZ(135deg);
 					}
 
 					&::before {
-						width: 13px;
-						height: 35px;
-						right: -10px;
+						width: 1.3rem;
+						height: 3.5rem;
+						right: -1rem;
 					}
 
 					&::after {
-						height: 13px;
-						width: 35px;
+						height: 1.3rem;
+						width: 3.5rem;
 					}
 				}
 			}
@@ -609,10 +617,10 @@ a {
 			align-items: center;
 
 			&-circle {
-				height: 23px;
-				width: 23px;
+				height: 2.3rem;
+				width: 2.3rem;
 				padding: 0;
-				margin: 0 11px;
+				margin: 0 1.1rem;
 				border-radius: 100%;
 				border-width: 0;
 				background-color: $mainYellow;
@@ -655,14 +663,14 @@ a {
 			width: 90%;
 			height: 2.8rem;
 			margin: 0 5%;
-			border: 3px solid $white;
-			border-radius: 20px;
+			border: .3rem solid $white;
+			border-radius: 2rem;
 
 			&-scale {
 				width: 100%;
 				height: 100%;
 				background: linear-gradient(45deg, $cian, $violet);
-				border-radius: 20px;
+				border-radius: 2rem;
 			}
 		}
 	}
@@ -676,8 +684,8 @@ a {
 		;
 		display: grid;
 		grid-template-columns: 1fr 2fr 1fr;
-		grid-template-rows: 250px 250px;
-		grid-gap: 30px;
+		grid-template-rows: 25rem 25rem;
+		grid-gap: 3rem;
 		grid-template-areas: 
 				'item1 item2 item4'
 				'item1 item3 item4'
@@ -783,7 +791,7 @@ a {
 		}
 
 		&::-webkit-scrollbar-thumb {
-			border-radius: 10px;
+			border-radius: 1rem;
 			background-color: $mainBlue;
 		}
 	}
@@ -811,7 +819,7 @@ a {
 		&-icon {
 			width: 4.5rem;
 			height: 4.5rem;
-			margin: auto 15px;
+			margin: auto 1.5rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -883,26 +891,5 @@ a {
 }
 
 @media(max-width: 992px) {
-	.header {
-		&__nav {
-			position: fixed;
-			left: 0;	
-			top: 0;	
-			width: 100vw;	
-			height: 100vh;
-			display: flex;	
-			justify-content: center;	
-			align-items: center;
-			background-color: $mainBlue + db;
-			z-index: -1;
-
-			&-list {
-				flex-direction: column;
-			}
-
-			&-item {
-				margin: 0;	
-			}
-		}
-	}
+	@import "mobile";
 }

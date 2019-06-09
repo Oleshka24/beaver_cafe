@@ -54,13 +54,16 @@
 						</li>
 					</ul>
 				</nav>
+				<button class="header__nav-btn">
+					<span></span>
+				</button>
 			</div>
 		</div>
 	</header>
 	<main class="main">
 		<section class="banner" id="home">
 			<div class="container">
-				<div class="row">
+				<div class="row banner__wrap">
 					<div class="col-lg-12">
 						<h1 class="main__title">Junior Front-End Developer</h1>
 					</div>
@@ -107,18 +110,27 @@
 							<h2 class="main__heading">About Me</h2>
 						</div>
 					</div>
-					<div class="col-lg-6">
-						<img src="img/photos/about_me_photo.png" alt="About Me" class="about_me__photo">
-					</div>
-					<div class="col-lg-6">
-						<h3 class="about_me__heading">Pipko Oleh</h3>
-						<div class="about_me__content">
-							<p>Hello again, as I see you grabbed interest. Well I will not torment.</p>
-							<p>My name is Oleh and I am a Junior Frontend Developer. For a long time I worked as a freelancer for a small company from Israel (actually a little less than a year).</p>
-							<p>My responsibilities included HTML/CSS/JavaScript(jQuery) layout for PSD templates and their subsequent integration into CMS WordPress. And I also trusted me to refine not my sites (edits, adaptations, etc.). I have 3 completed works and 10+ sites in which I have been indirectly involved.</p>
-							<p>Not so long ago, I temporarily disconnected from the team. Later, I sat down with another full-fledged project, but this time the customer was from Ukraine.</p>
-							<p>Currently looking for an office, preferably in the Dnipro.</p>
-							<a href="#about_me" class="main__btn">Download word file</a>
+					<div class="col-lg-12">
+						<div class="row about_me__wrap">
+							<div class="col-lg-6">
+								<img src="img/photos/about_me_photo.png" alt="About Me" class="about_me__photo">
+							</div>
+							<div class="col-lg-6">
+								<h3 class="about_me__heading">Pipko Oleh</h3>
+								<div class="about_me__content about_me__content--less">
+									<p>Hello again, as I see you grabbed interest. Well I will not torment.</p>
+									<p>My name is Oleh and I am a Junior Frontend Developer... <button class="about_me__content-btn">[read more]</button></p>
+									<a href="#about_me" class="main__btn">Download word file</a>
+								</div>
+								<div class="about_me__content">
+									<p>Hello again, as I see you grabbed interest. Well I will not torment.</p>
+									<p>My name is Oleh and I am a Junior Frontend Developer. For a long time I worked as a freelancer for a small company from Israel (actually a little less than a year).</p>
+									<p>My responsibilities included HTML/CSS/JavaScript(jQuery) layout for PSD templates and their subsequent integration into CMS WordPress. And I also trusted me to refine not my sites (edits, adaptations, etc.). I have 3 completed works and 10+ sites in which I have been indirectly involved.</p>
+									<p>Not so long ago, I temporarily disconnected from the team. Later, I sat down with another full-fledged project, but this time the customer was from Ukraine.</p>
+									<p>Currently looking for an office, preferably in the Dnipro.</p>
+									<a href="#about_me" class="main__btn">Download word file</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -142,10 +154,12 @@
 				<ul class="skills__carousel row">
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/html5.svg" alt="HTML5">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/html5.svg" alt="HTML5">
+								</div>
+								<h3 class="skills__item-heading">HTML5</h3>
 							</div>
-							<h3 class="skills__item-heading">HTML5</h3>
 							<h4 class="skills__item-subheading">Advanced</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -154,10 +168,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/css3-alt.svg" alt="CSS3">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/css3-alt.svg" alt="CSS3">
+								</div>
+								<h3 class="skills__item-heading">CSS3</h3>
 							</div>
-							<h3 class="skills__item-heading">CSS3</h3>
 							<h4 class="skills__item-subheading">Advanced</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -166,10 +182,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/js.svg" alt="JavaScript">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/js.svg" alt="JavaScript">
+								</div>
+								<h3 class="skills__item-heading">JavaScript</h3>
 							</div>
-							<h3 class="skills__item-heading">JavaScript</h3>
 							<h4 class="skills__item-subheading">Intermediate</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -178,10 +196,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/wordpress.svg" alt="WordPress">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/wordpress.svg" alt="WordPress">
+								</div>
+								<h3 class="skills__item-heading">WordPress</h3>
 							</div>
-							<h3 class="skills__item-heading">WordPress</h3>
 							<h4 class="skills__item-subheading">Intermediate</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -190,10 +210,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/html5.svg" alt="HTML5">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/html5.svg" alt="HTML5">
+								</div>
+								<h3 class="skills__item-heading">HTML5</h3>
 							</div>
-							<h3 class="skills__item-heading">HTML5</h3>
 							<h4 class="skills__item-subheading">Advanced</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -202,10 +224,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/css3-alt.svg" alt="CSS3">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/css3-alt.svg" alt="CSS3">
+								</div>
+								<h3 class="skills__item-heading">CSS3</h3>
 							</div>
-							<h3 class="skills__item-heading">CSS3</h3>
 							<h4 class="skills__item-subheading">Advanced</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -214,10 +238,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/js.svg" alt="JavaScript">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/js.svg" alt="JavaScript">
+								</div>
+								<h3 class="skills__item-heading">JavaScript</h3>
 							</div>
-							<h3 class="skills__item-heading">JavaScript</h3>
 							<h4 class="skills__item-subheading">Intermediate</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -226,10 +252,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/wordpress.svg" alt="WordPress">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/wordpress.svg" alt="WordPress">
+								</div>
+								<h3 class="skills__item-heading">WordPress</h3>
 							</div>
-							<h3 class="skills__item-heading">WordPress</h3>
 							<h4 class="skills__item-subheading">Intermediate</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -238,10 +266,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/html5.svg" alt="HTML5">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/html5.svg" alt="HTML5">
+								</div>
+								<h3 class="skills__item-heading">HTML5</h3>
 							</div>
-							<h3 class="skills__item-heading">HTML5</h3>
 							<h4 class="skills__item-subheading">Advanced</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -250,10 +280,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/css3-alt.svg" alt="CSS3">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/css3-alt.svg" alt="CSS3">
+								</div>
+								<h3 class="skills__item-heading">CSS3</h3>
 							</div>
-							<h3 class="skills__item-heading">CSS3</h3>
 							<h4 class="skills__item-subheading">Advanced</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -262,10 +294,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/js.svg" alt="JavaScript">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/js.svg" alt="JavaScript">
+								</div>
+								<h3 class="skills__item-heading">JavaScript</h3>
 							</div>
-							<h3 class="skills__item-heading">JavaScript</h3>
 							<h4 class="skills__item-subheading">Intermediate</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>
@@ -274,10 +308,12 @@
 					</li>
 					<li class="col-lg-12">
 						<div class="skills__item">
-							<div class="skills__item-icon">
-								<img src="img/skills/wordpress.svg" alt="WordPress">
+							<div class="skills__item-top">
+								<div class="skills__item-icon">
+									<img src="img/skills/wordpress.svg" alt="WordPress">
+								</div>
+								<h3 class="skills__item-heading">WordPress</h3>
 							</div>
-							<h3 class="skills__item-heading">WordPress</h3>
 							<h4 class="skills__item-subheading">Intermediate</h4>
 							<div class="skills__item-level">
 								<div class="skills__item-level-scale"></div>

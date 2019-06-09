@@ -4,7 +4,16 @@ const 	skillsCarousel = $('.skills__carousel'),
 		skillsCarouselNav = $('.skills__carousel-nav');
 
 skillsCarousel.owlCarousel({
-	responsive: {0: {items: 4}},
+	responsive: {
+		0: {
+			items: 1,
+			dotsEach: 4
+		},
+
+		992: {
+			items: 4
+		}
+	},
 	loop: true,
 	nav: true,
 	dots: true,
@@ -15,5 +24,24 @@ skillsCarousel.owlCarousel({
 	dotClass: ['skills__carousel-dots-circle']
 });
 
-skillsCarousel.find('.owl-stage-outer').css('overflow', 'hidden');
-skillsCarousel.find('.owl-stage').css('display', 'flex');
+// SECTION PROJECTS - CAROUSEL 
+
+const 	projectsCarousel = $('.projects__list'),
+	 	projectsCarouselNav = $('.projects__nav');
+
+if($(window).width() < 992) {
+	projectsCarousel.owlCarousel({
+		items: 1,
+		loop: true,
+		nav: true,
+		dots: true,
+		navClass: ['projects__nav-btn projects__nav-btn--prev', 'projects__nav-btn projects__nav-btn--next'],
+		navText: ['<span class="projects__btn-span">Prev</span>', '<span class="projects__btn-span">Next</span>'],
+		navContainer: $('.projects__nav'),
+		dotsContainer: $('.projects__dots'),
+		dotClass: ['projects__dots-circle']
+	});
+}
+
+$('.owl-stage-outer').css('overflow', 'hidden');
+$('.owl-stage').css('display', 'flex');

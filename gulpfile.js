@@ -1,11 +1,11 @@
-const	gulp 			= require('gulp'),
+const 	gulp 			= require('gulp'),
 		rename 			= require('gulp-rename'),
 		sass 			= require('gulp-sass'),
 		autoprefixer 	= require('gulp-autoprefixer'),
 		sourcemaps 		= require('gulp-sourcemaps'),
 		browserSync 	= require('browser-sync').create();
 
-function css_style(done) {
+function style_css(done) {
 	gulp.src('www/becafe/scss/main.scss')
 	 .pipe(sourcemaps.init())
 	 .pipe(rename({
@@ -16,19 +16,15 @@ function css_style(done) {
 	 	outputStyle: 'compressed',
 	 }))
 	 .on('error', console.error.bind(console))
-	 .pipe(autoprefixer({
-	 	browsers: ['last 2 versions'],
-	 	cascade: false
-	 }))
 	 .pipe(sourcemaps.write('./'))
-	 .pipe(gulp.dest('./www/becafe/css/'))
+	 .pipe(gulp.dest('www/becafe/css/'))
 	 .pipe(browserSync.stream());
 
 	done();
 }
 
 function watchFiles() {
-	gulp.watch('www/becafe/scss/main.scss', css_style);
+	gulp.watch('www/becafe/scss/*.scss', style_css);
 	gulp.watch('www/becafe/index.html', browserReload);
 	gulp.watch('www/becafe/js/main.js', browserReload);
 }
@@ -36,7 +32,7 @@ function watchFiles() {
 function sync(done) {
 	browserSync.init({
 		server: {
-			baseDir: 'www/becafe/'
+			baseDir: 'www/becafe/',
 		},
 		port: 3000,
 	});
